@@ -20,7 +20,7 @@ function loadAll(){
   .then(json => {
     console.log(json)
     globalVar=json
-    CardsFunc
+    CardsFunc()
     })
 }
 
