@@ -32,7 +32,7 @@ function CardsFunc(){
    <h2>${item.Title}</h2>
    <img src=${item.source}>
    <p>${item.likes}</p>
-   
+      <button class="like-btn">Like <3</button>
    `
    div.classList.add('card')
    divCollection.appendChild(div)
