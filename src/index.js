@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-const globalVar=''
+let globalVar=''
 function loadAll(){
   return fetch('http://localhost:3000/toys')
   .then(resp => resp.json())
