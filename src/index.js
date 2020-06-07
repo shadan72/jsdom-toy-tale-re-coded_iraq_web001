@@ -28,6 +28,12 @@ function CardsFunc(){
   const divCollection=document.getElementById('toy-collection')
  globalVar.forEach(item =>{
    const div=document.createElement('div')
+   div.innerHTML=`
+   <h2>${item.Title}</h2>
+   <img src=${item.source}>
+   <p>${item.likes}</p>
+   
+   `
    div.classList.add('card')
    divCollection.appendChild(div)
  }) 
