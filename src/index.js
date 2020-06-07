@@ -20,10 +20,11 @@ function loadAll(){
   .then(json => {
     console.log(json)
     globalVar=json
+    CardsFunc
     })
 }
 
-function(){
+function CardsFunc(){
  globalVar.forEach(item =>{
    const div=document.createElement('div')
    div.classList.add('card')
