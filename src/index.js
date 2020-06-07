@@ -25,6 +25,7 @@ function loadAll(){
 }
 
 function CardsFunc(){
+  const divCollection=document.getElementById('toy-collection')
  globalVar.forEach(item =>{
    const div=document.createElement('div')
    div.classList.add('card')
