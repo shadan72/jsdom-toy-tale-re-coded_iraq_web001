@@ -13,8 +13,21 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 });
-
-
-   fetch('http://localhost:3000/toys')
+const globalVar=''
+function loadAll(){
+  return fetch('http://localhost:3000/toys')
   .then(resp => resp.json())
-  .then(json => console.log(json))
+  .then(json => {
+    console.log(json)
+    globalVar=json
+    })
+}
+
+function(){
+ globalVar.forEach(item =>{
+   const div=document.createElement('div')
+   div.classList.add('card')
+ }) 
+}
+
+loadAll()
